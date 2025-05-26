@@ -118,7 +118,7 @@ const [nutrition, setNutrition] = useState(null);
     } as any);
 
     formData.append('language', 'eng');
-    formData.append('apikey', 'K87615154788957'); // 🔑 Your OCR.Space API key
+    formData.append('apikey', 'Your api-key'); // 🔑 Your OCR.Space API key
 
     const response = await fetch('https://api.ocr.space/parse/image', {
       method: 'POST',
