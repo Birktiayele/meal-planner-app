@@ -5,7 +5,7 @@
 import { db } from '../firebase/firebaseConfig';
 import { collection, addDoc } from 'firebase/firestore';
 
-const SPOONACULAR_API_KEY = 'fd99c8cfa7464b9ea19417c8d698542f'; // replace this
+const SPOONACULAR_API_KEY = 'your-api-key'; // Replace with your actual Spoonacular API key 
 const fetchRecipes = async () => {
   const response = await fetch(
     `https://api.spoonacular.com/recipes/random?number=10&apiKey=${SPOONACULAR_API_KEY}`
